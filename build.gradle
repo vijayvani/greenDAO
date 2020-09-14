@@ -17,6 +17,18 @@ sonarqube {
   }
 }
 
+buildscript {
+    repositories {
+        jcenter()
+        mavenCentral() // add repository
+    }
+    dependencies {
+        classpath 'com.android.tools.build:gradle:3.5.3'
+        classpath 'org.greenrobot:greendao-gradle-plugin:3.3.0' // add plugin
+    }
+}
+
+
 ext {
     compileSdkVersion = 29
 
