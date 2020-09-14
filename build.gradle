@@ -5,6 +5,18 @@ wrapper {
     distributionType = Wrapper.DistributionType.ALL
 }
 
+plugins {
+  id "org.sonarqube" version "3.0"
+}
+
+sonarqube {
+  properties {
+    property "sonar.projectKey", "vijayvani_greenDAO"
+    property "sonar.organization", "vijayvani-github"
+    property "sonar.host.url", "https://sonarcloud.io"
+  }
+}
+
 ext {
     compileSdkVersion = 29
 
